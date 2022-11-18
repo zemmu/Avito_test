@@ -50,6 +50,7 @@ docker-compose up
 ]
 Отчет выводится только в Postman, файл не создается.
 
+Вход:
 {
     "key": "GetTransacts",
     "column": "date_time", 
