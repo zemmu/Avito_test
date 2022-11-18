@@ -56,6 +56,7 @@ BuyService - иногда может показаться что не сраба
 }
 ]
 ]
+
 column:
  - "cost" или "date_time".
 
