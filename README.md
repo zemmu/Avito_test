@@ -27,34 +27,34 @@ BuyService - иногда может показаться что не сраба
 Вход:GetTransacts
 Выход: двумерный срез.
 Например: [
-    - [
-        {
-            "Id": 14,
-            "IdUser": 22,
-            "IdServ": 14,
-            "IdOrder": 22,
-            "Cost": 1,
-            "Date": "18-11-2022 14:08:16"
-        },
-        {
-            "Id": 15,
-            "IdUser": 22,
-            "IdServ": 4,
-            "IdOrder": 2,
-            "Cost": 4,
-            "Date": "18-11-2022 14:21:18"
-        }
-    ],
-    - [
-        {
-            "Id": 21,
-            "IdUser": 22,
-            "IdServ": 41,
-            "IdOrder": 29,
-            "Cost": 2.3,
-            "Date": "18-11-2022 19:55:00"
-        }
-    ]
+ - [
+{
+"Id": 14,
+"IdUser": 22,
+"IdServ": 14,
+"IdOrder": 22,
+"Cost": 1,
+"Date": "18-11-2022 14:08:16"
+},
+{
+"Id": 15,
+"IdUser": 22,
+"IdServ": 4,
+"IdOrder": 2,
+"Cost": 4,
+"Date": "18-11-2022 14:21:18"
+}
+],
+ - [
+{
+"Id": 21,
+"IdUser": 22,
+"IdServ": 41,
+"IdOrder": 29,
+"Cost": 2.3,
+"Date": "18-11-2022 19:55:00"
+}
+]
 ]
 column:
  - "cost" или "date_time".
