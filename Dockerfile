@@ -1,0 +1,18 @@
+# Compile stage
+FROM golang:1.17 AS build-env
+
+ADD . /dockerdev
+WORKDIR /dockerdev
+
+RUN go get github.com/go-sql-driver/mysql
+RUN go build -o /server
+
+# Final stage
+FROM debian:buster
+
+EXPOSE 8000
+
+WORKDIR /
+COPY --from=build-env /server /
+
+CMD ["/server"]
